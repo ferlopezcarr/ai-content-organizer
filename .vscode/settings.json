@@ -5,8 +5,26 @@
         "**/.hg": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
+        "**/__init__.py": true,
         "**/__pycache__": true,
-        ".pytest_cache": true,
-        ".ruff_cache": true
-    }
+        "**/.pytest_cache": true,
+        "**/.ruff_cache": true,
+        "**/*.egg-info": true
+    },
+    "chat.tools.terminal.autoApprove": {
+        "make": true,
+        "mkdir": true,
+        "mv": true,
+        "cd": true,
+        "ls": true,
+        "pwd": true,
+        "python": true,
+        "pip": true,
+        "pytest": true,
+        "ruff": true,
+        "black": true,
+        "uv": true
+    },
+    "python-envs.defaultEnvManager": "ms-python.python:pyenv",
+    "python-envs.pythonProjects": []
 }

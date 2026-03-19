@@ -1,22 +1,62 @@
-# Python-generated files
+# Python
 __pycache__/
-*.py[oc]
+*.py[cod]
+*$py.class
+*.so
+.Python
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
 wheels/
-*.egg-info
-
-# Tests and coverage reports
-.coverage
-htmlcov/
-coverage.xml
+*.egg-info/
+.installed.cfg
+*.egg
 
 # Virtual environments
+venv/
+env/
+ENV/
 .venv
+.venv/
+backend/.venv/
+bot/.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Environment variables
 .env
+.env.local
+backend/.env
+bot/.env
 
-# Temp files
+# Testing and coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.pytest_cache/
+.tox/
+
+# Docker
+db_data/
+
+# OS
 .DS_Store
+Thumbs.db
 *.log
+
+# Pydantic
+.pydantic_cache/

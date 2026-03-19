@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:8000
+
+### Extract content from LinkedIn URL
+POST {{baseUrl}}/content/extract
+Content-Type: application/json
+
+{
+  "url": "https://www.linkedin.com/feed/update/urn:li:activity:7428090644889313280/"
+}
+
+### Extract content - with profile URL
+POST {{baseUrl}}/content/extract
+Content-Type: application/json
+
+{
+  "url": "https://www.linkedin.com/in/john-doe"
+}
+
+### Extract content - unsupported URL (should fail)
+POST {{baseUrl}}/content/extract
+Content-Type: application/json
+
+{
+  "url": "https://twitter.com/user/status/123"
+}

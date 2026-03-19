@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:8000/api
+@userId = 123
+
+### Ask question
+POST {{baseUrl}}/{{userId}}/chat/ask
+Content-Type: application/json
+
+{
+  "query": "What did I save about AI safety?"
+}
+
+### Chat history
+GET {{baseUrl}}/{{userId}}/chat/history?limit=10

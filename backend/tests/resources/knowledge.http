@@ -1,0 +1,8 @@
+@baseUrl = http://localhost:8000/api
+@userId = 123
+
+### Search knowledge base
+GET {{baseUrl}}/{{userId}}/knowledge/search?q=AI%20trends&limit=5
+
+### List categories
+GET {{baseUrl}}/{{userId}}/knowledge/categories
